@@ -37,6 +37,7 @@ import com.example.android.sunshine.utilities.NetworkUtils;
 import com.example.android.sunshine.utilities.OpenWeatherJsonUtils;
 
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity implements ForecastAdapterOnClickHandler {
 
@@ -211,6 +212,20 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
         return true;
     }
 
+    private void openLocation() {
+        String addressString = "9020 Aviation Boulevard, Inglewood, CA";
+        Uri mapUri = Uri.parse("geo:0,0?q=" + addressString);
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW);
+        mapIntent.setData(mapUri);
+
+        if(mapIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(mapIntent);
+        }
+        else {
+            Log.d(TAG, "Can't launch any map application!");
+        }
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -221,7 +236,11 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
             return true;
         }
 
-        // TODO (2) Launch the map when the map menu item is clicked
+        // COMPLETED Launch the map when the map menu item is clicked
+        if (id == R.id.map_open) {
+            openLocation();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

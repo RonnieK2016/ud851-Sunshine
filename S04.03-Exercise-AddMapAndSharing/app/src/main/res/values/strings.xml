@@ -31,6 +31,9 @@
         An error has occurred. Please try again by clicking REFRESH
     </string>
 
+    <string name="map_button">Map</string>
+    <string name="share_button">Share</string>
+
 
     <!-- - - - - - - - - - - - - -->
     <!--Used by SunshineDateUtils-->
