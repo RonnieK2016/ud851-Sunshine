@@ -228,4 +228,6 @@
         Low:<xliff:g id="low">%3$s</xliff:g>
     </string>
 
+    <string name="sunshine_main_notification_channel">Sunshine Main Notification Channel</string>
+
 </resources>
