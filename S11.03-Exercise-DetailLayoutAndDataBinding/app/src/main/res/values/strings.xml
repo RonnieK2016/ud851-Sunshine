@@ -214,6 +214,7 @@
     <string name="condition_960">Storm</string>
     <string name="condition_961">Violent Storm</string>
     <string name="condition_962">Hurricane</string>
+    <string name="condition_963">Rainy</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
 
@@ -243,5 +244,13 @@
         High:<xliff:g id="high">%2$s</xliff:g>
         Low:<xliff:g id="low">%3$s</xliff:g>
     </string>
+
+    <string name="primary_weather_info_icon_desc">Weather Conditions</string>
+    <string name="primary_weather_info_day">Wednesday, Feb 07</string>
+    <string name="primary_weather_info_temp_high" >20°</string>
+    <string name="primary_weather_info_temp_low" >15°</string>
+    <string name="primary_weather_info_humidity" >38%</string>
+    <string name="primary_weather_info_pressure" >995 hPa</string>
+    <string name="primary_weather_info_wind" >4km/h NW</string>
 
 </resources>
